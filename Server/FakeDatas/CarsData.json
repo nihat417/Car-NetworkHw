@@ -1,0 +1,66 @@
+[
+  {
+    "Id": 0,
+    "Make": "Nissan",
+    "Model": "Xterra",
+    "Year": 2005,
+    "VIN": "3FAHP0CG4BR088325",
+    "Color": "Goldenrod"
+  },
+  {
+    "Id": 1,
+    "Make": "Cadillac",
+    "Model": "XLR",
+    "Year": 2006,
+    "VIN": "WAUAKAFB9AN817675",
+    "Color": "Maroon"
+  },
+  {
+    "Id": 2,
+    "Make": "Mercedes-Benz",
+    "Model": "C-Class",
+    "Year": 2003,
+    "VIN": "WAUPL58E94A070337",
+    "Color": "Blue"
+  },
+  {
+    "Id": 3,
+    "Make": "Mazda",
+    "Model": "CX-7",
+    "Year": 2007,
+    "VIN": "WAUVT58E02A311934",
+    "Color": "Pink"
+  },
+  {
+    "Id": 4,
+    "Make": "Chevrolet",
+    "Model": "HHR",
+    "Year": 2011,
+    "VIN": "SAJWA2GT6EM702456",
+    "Color": "Khaki"
+  },
+  {
+    "Id": 5,
+    "Make": "Hyundai",
+    "Model": "Excel",
+    "Year": 1993,
+    "VIN": "WAUHF98P99A285034",
+    "Color": "Red"
+  },
+  {
+    "Id": 6,
+    "Make": "Ford",
+    "Model": "Expedition",
+    "Year": 2007,
+    "VIN": "4T1BD1EB9EU378164",
+    "Color": "Fuscia"
+  },
+  {
+    "Id": 7,
+    "Make": "Lexus",
+    "Model": "RX Hybrid",
+    "Year": 2012,
+    "VIN": "JN1CV6AR5FM329358",
+    "Color": "Khaki"
+  }
+]
