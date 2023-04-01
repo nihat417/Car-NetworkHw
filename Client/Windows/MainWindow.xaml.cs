@@ -4,6 +4,7 @@ using Server.Enums;
 using Server.Models;
 using System;
 using System.IO;
+using System.Linq;
 using System.Net;
 using System.Net.Sockets;
 using System.Text.Json;
@@ -16,11 +17,12 @@ namespace Client
 
     public partial class MainWindow : Window
     {
-        public Car Car { get; set; }
+        public Car? Car { get; set; }
 
-        TcpClient tcpClient;
-        BinaryWriter bw;
-        BinaryReader br;
+        private TcpClient tcpClient;
+        private BinaryWriter? bw;
+        private BinaryReader? br;        
+
         public MainWindow()
         {
             InitializeComponent();
@@ -44,8 +46,7 @@ namespace Client
             if (sender is ComboBox comboBox)
                 if (comboBox.SelectedItem is HttpMethods method &&
                     (method == HttpMethods.GET ||
-                    method == HttpMethods.DELETE ||
-                    method == HttpMethods.PUT))
+                    method == HttpMethods.DELETE))
                     textblock.IsEnabled = true;
         }
 
@@ -76,7 +77,6 @@ namespace Client
                 case HttpMethods.POST:
                     {
                         MessageBox.Show("POST");
-                        Car car = new Car();
                         AddCar addCar = new AddCar();
                         addCar.ShowDialog();
                         Command command = new Command()
@@ -133,6 +133,7 @@ namespace Client
                                 Car = Car
                             };
 
+
                             string jsonString = JsonSerializer.Serialize(command);
                             bw.Write(jsonString);
                             bool isDeleted = br.ReadBoolean();
@@ -141,12 +142,9 @@ namespace Client
                             textblock.Text = string.Empty;
                         }
                         break;
+                        
                     }
             }
         }
-
-
-
-
     }
 }

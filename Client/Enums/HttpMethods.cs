@@ -6,7 +6,6 @@ namespace Server.Enums
     {
         GET,
         POST,
-        PUT,
         DELETE
     }
 }
