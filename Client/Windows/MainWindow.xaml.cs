@@ -45,8 +45,7 @@ namespace Client
         {
             if (sender is ComboBox comboBox)
                 if (comboBox.SelectedItem is HttpMethods method &&
-                    (method == HttpMethods.GET ||
-                    method == HttpMethods.DELETE))
+                    (method == HttpMethods.GET || method == HttpMethods.DELETE))
                     textblock.IsEnabled = true;
         }
 
@@ -92,9 +91,12 @@ namespace Client
                     }
                 case HttpMethods.GET:
                     {
-                        if (textblock.Text is not null)
+                        double number;
+                        bool isNumber = double.TryParse(textblock.Text, out number);
+
+                        if (textblock.Text is not null && isNumber)
                         {
-                            
+
                             var Car = new Car();
                             Car.Id = int.Parse(textblock.Text);
 
@@ -119,6 +121,8 @@ namespace Client
                             textblock.IsEnabled = false;
                             textblock.Text = string.Empty;
                         }
+                        else
+                            MessageBox.Show("write a number ");
                         break;
                     }
                 case HttpMethods.DELETE:

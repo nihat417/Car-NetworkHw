@@ -15,6 +15,8 @@ namespace Client.Windows
         }
 
         private void Close_Click(object sender, RoutedEventArgs e)
-            => DialogResult = true;
+            => DialogResult = false;
+
+        
     }
 }

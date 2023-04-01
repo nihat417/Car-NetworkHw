@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Client.Windows"
         mc:Ignorable="d"
         Title="AddCar" Height="450" Width="800">
-    <Grid>
+    <Grid Background="#ED1C24">
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition/>

@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Client.Windows"
         mc:Ignorable="d"
         Title="GetCar" Height="450" Width="800">
-    <Grid>
+    <Grid Background="#235789">
         
             <Grid.RowDefinitions>
                 <RowDefinition/>
@@ -84,6 +84,6 @@
                  Height="30"></TextBox>
 
 
-            <Button Grid.Row="5" Grid.Column="1" Width="200" Height="35" FontSize="20" Name="Add"  Background="Red">Close</Button>
+            <Button Grid.Row="5" Grid.Column="1" Width="200" Height="35" FontSize="20" Name="Add"  Background="Red" Click="Close_Click">Close</Button>
         </Grid>
 </Window>

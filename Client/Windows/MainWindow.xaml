@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Client"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid Background="#ED1C24">
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition/>
@@ -15,19 +15,24 @@
 
 
         <ComboBox Grid.Row="0"
-                  x:Name="combobox"
-                  Margin="200,40,200,50"
-                  SelectionChanged="combobox_SelectionChanged">
+            x:Name="combobox"
+            Margin="200,40,200,50"
+            SelectionChanged="combobox_SelectionChanged">
+            
         </ComboBox>
+
+       
+       
 
         <TextBox Grid.Row="1"
                    x:Name="textblock"
-                   Background="Wheat"
+                   Background="#F1D302"
                    Foreground="Black"
                    Margin="200,40,200,50">
         </TextBox>
 
         <Button Grid.Row="2"
+                Background="#235789"
                 Margin="200,40,200,50"
                 Content="Request"
                 FontSize="20"
